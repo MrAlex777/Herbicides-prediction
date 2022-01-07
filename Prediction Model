@@ -52,7 +52,7 @@ def GenerateDescriptors(file):
     return UsedDes
         
         
-Des=GenerateDescriptors(r'C:\Users\Wys\Desktop\Thesis\Code\herbs.csv')
+Des=GenerateDescriptors(file)
 Des=(Des-mean)/std
 LR=joblib.load('LR.pkl')
 RF=joblib.load('RF.pkl')
