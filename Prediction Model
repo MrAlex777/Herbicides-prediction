@@ -54,3 +54,12 @@ def GenerateDescriptors(file):
         
 Des=GenerateDescriptors(r'C:\Users\Wys\Desktop\Thesis\Code\herbs.csv')
 Des=(Des-mean)/std
+LR=joblib.load('LR.pkl')
+RF=joblib.load('RF.pkl')
+SVM=joblib.load('SVM.pkl')
+XG=joblib.load('XG.pkl')
+
+LR.predict_proba(Des.values)
+RF.predict_proba(Des.values)
+SVM.predict_proba(Des.values)
+XG.predict_proba(Des.values)
