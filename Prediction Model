@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import joblib
 from janitor.chemistry import molecular_descriptors,smiles2mol,morgan_fingerprint
 from rdkit import Chem
 from rdkit.ML.Descriptors import MoleculeDescriptors
